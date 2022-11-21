@@ -1,0 +1,173 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.nav-bar{
+    display: flex;
+    padding: 20px;
+    background-color: aqua;
+}
+
+.nav-bar li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav-bar li a:hover{
+    background-color: white;
+    color: aqua;
+}
+
+/* Book page formatting */
+
+input{
+    display: none;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.book{
+    display: flex;
+}
+
+#cover{
+    width: 250px;
+    height: 400px;
+}
+
+.flip-book{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    perspective: 1500px;
+}
+
+.flip{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: .5s;
+}
+
+p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 0 13px;
+    box-shadow: inset 20px 0 50px rbga(0, 0, 0, 0.5) 0 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #000
+}
+
+.next-btn{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: #000;
+}
+
+.back-btn{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: #000;
+}
+
+#p1{
+    background-color: white;
+    z-index: 3;
+}
+
+#p2{
+    z-index: 2;
+}
+#p3{
+    z-index: 1;
+}
+
+#c1:checked ~ .flip-book #p1{
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+
+#c2:checked ~ .flip-book #p1{
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+
+#c3:checked ~ .flip-book #p1{
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+ /* Flip */
+
+ 
+ .flipbookkk{
+    margin-top: 15vh !important;
+    margin-bottom: 5vh !important;
+
+}
+
+.flipbookkk-title{
+    color: #ffa200;
+    text-align: center;
+    font-size: 5vw !important;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 900;
+    line-height: 75px;
+   text-shadow: 1px 3px 0px #373737;
+}
+
+@media(min-width: 768px){
+    .flipbookkk-title{
+    font-size: 2.5vw !important;
+}
+
+}
