@@ -16,51 +16,80 @@
             <li><a href="../../index.html">Home</a></li>
         </ul>
     </nav>
-    <div clas="book">
-    <input type="checkbox" id="c1">
-    <input type="checkbox" id="c2">
-    <input type="checkbox" id="c3">
-    <div class="flip-book">
-        <div class="cover" id="cover">
-        <div class="back">
-            <img src="../images/Bertie_Bear_01.jpg">
-            <label class="back-btn" for="c1">Back</label>
+    <div class="book">
+        <!-- For Next/Prev Controls -->
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <input type="checkbox" id="c4">
+        <!-- Book Cover -->
+        <div id="cover">
+            <img src="../images/Bertie_Bear.jpg" alt="Cover">
         </div>
-        <div class="front">
-            <h1>Bertie Bear Learns to Play</h1>
-            <p>Written By Ruth Kennell</p>
-            <label clas="next-btn" for="c1">Next</label>
+        <!-- Pages -->
+        <div class="flip-book">
+            <!-- Page 1 -->
+            <div class="flip" id="p1">
+                <div class="back">
+                    <img src="../images/Bertie_Bear_01.jpg" alt="">
+                    <label for="c1" class="back-btn">Before</label>
+                </div>
+                <div class="front">
+                    <h2>Bertie Bear Learns to Play</h2>
+                    <p>Written by Ruth Kennell</p>
+                    <label for="c1" class="next-btn">NEXT</label>
+                </div>
+            </div>
+            <!-- Page 2 -->
+            <div class="flip" id="p2">
+                <div class="back">
+                    <img src="../images/Bertie_Bear.jpg" alt="">
+                    <label for="c2" class="back-btn">Before</label>
+                </div>
+                <div class="front">
+                    <p> Sitting over a cup of juice and a Jammy Dodger, Frank chats sociably with the bear friends who
+                        have come over to play for an hour. Bertie is still very unsure about having friends ( he tends
+                        to ignore people when they come over or gets over excited and frightens them away ) so we are
+                        playing for an hour at a time so as not to descend into stressful meltdown phase. Frank , on the
+                        other hand, is not overly impressed as it is ” nowhere near enough time to play a good game of
+                        pirates” but he is willing to go along with it for a while as even he becomes stressed out when
+                        Bertie displays signs of being overwhelmed </p>
+                    <label for="c2" class="next-btn">NEXT</label>
+                </div>
+            </div>
+            <!-- Page 3 -->
+            <div class="flip" id="p3">
+                <div class="back">
+                    <img src="../images/Bertie_Bear_01.jpg" alt="">
+                    <label for="c3" class="back-btn">Before</label>
+                </div>
+                <div class="front">
+                    <p>“So, we will get the Lego out and build a castle first” instructs Frank ” Bertie, you can find
+                        all the red bricks, Theo “, ( teddy friend from across the road, very cute and easy to get along
+                        with) ” you can look out the windows and doors for us and Betty “( a pretty girl teddy from
+                        Build a Bear with a purple bow and a REAL heart, something which has not gone unnoticed with
+                        Frank!) ” you can get all the trees and green bits to go around the castle”</p>
+                    <label for="c3" class="next-btn">NEXT</label>
+                </div>
+            </div>
+            <!-- Page 4 -->
+
+            <div class="flip" id="p4">
+                <div class="back">
+                    <label for="c4" class="back-btn">Before</label>
+                </div>
+                <div class="front">
+                    <p>“So, we will get the Lego out and build a castle first” instructs Frank ” Bertie, you can find
+                        all the red bricks, Theo “, ( teddy friend from across the road, very cute and easy to get along
+                        with) ” you can look out the windows and doors for us and Betty “( a pretty girl teddy from
+                        Build a Bear with a purple bow and a REAL heart, something which has not gone unnoticed with
+                        Frank!) ” you can get all the trees and green bits to go around the castle”</p>
+                    <label for="c4" class="next-btn">NEXT</label>
+                </div>
+            </div>
+
         </div>
     </div>
-
-
-
-    <div class="flip-book">
-        <div class="flip" id="p1">
-        <div class="back">
-            <img src="../images/Bertie_Bear.jpg">
-            <label class="back-btn" for="c1">Back</label>
-        </div>
-        <div class="front">
-            <h1>Trial 1</h1>
-            <p>This is 1</p>
-            <label clas="next-btn" for="c1">Next</label>
-        </div>
-    </div>
-
-    <div class="flip-book">
-        <div class="flip" id="p3">
-        <div class="back">
-            <img src="../images/Bertie_Bear_01.jpg">
-            <label class="back-btn" for="c2">Back</label>
-        </div>
-        <div class="front">
-            <h1>Trial 2</h1>
-            <p>This is two</p>
-            <label clas="next-btn" for="c2">Next</label>
-        </div>
-    </div>
-
 
 
     </div>
