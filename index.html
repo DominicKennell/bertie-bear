@@ -5,37 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bertie Bear - Homepage</title>
+    <title>Bertie Bear Learn to Play</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <!-- Nav section -->
-    <section class="home">
-        <nav>
-            <ul class="nav-bar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#bertie-bear-stories">Bertie Bear Stories</a></li>
-            </ul>
-        </nav>
-    </section>
+    <div class="book">
+        <!-- For Next/Prev Controls -->
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <input type="checkbox" id="c4">
+        <!-- Book Cover -->
+        <div id="cover">
+            <img src="./assets/images/Bertie_Bear.jpg" alt="Cover">
+        </div>
+        <!-- Pages -->
+        <div class="flip-book">
+            <!-- Page 1 -->
+            <div class="flip" id="p1">
+                <div class="back">
+                    <img src="./assets/images/Bertie_Bear_01.jpg" alt="">
+                    <label for="c1" class="back-btn">Before</label>
+                </div>
+                <div class="front">
+                    <h2>Bertie Bear Learns to Play</h2>
+                    <p>Written by Ruth Kennell</p>
+                    <label for="c1" class="next-btn">NEXT</label>
+                </div>
+            </div>
+            <!-- Page 2 -->
+            <div class="flip" id="p2">
+                <div class="back">
+                    <img src="./assets/images/Bertie_Bear.jpg" alt="">
+                    <label for="c2" class="back-btn">Before</label>
+                </div>
+                <div class="front">
+                    <p> Sitting over a cup of juice and a Jammy Dodger, Frank chats sociably with the bear friends who
+                        have come over to play for an hour. Bertie is still very unsure about having friends ( he tends
+                        to ignore people when they come over or gets over excited and frightens them away ) so we are
+                        playing for an hour at a time so as not to descend into stressful meltdown phase. Frank , on the
+                        other hand, is not overly impressed as it is ” nowhere near enough time to play a good game of
+                        pirates” but he is willing to go along with it for a while as even he becomes stressed out when
+                        Bertie displays signs of being overwhelmed </p>
+                    <label for="c2" class="next-btn">NEXT</label>
+                </div>
+            </div>
+            <!-- Page 3 -->
+            <div class="flip" id="p3">
+                <div class="back">
+                    <img src="./assets/images/Bertie_Bear_01.jpg" alt="">
+                    <label for="c3" class="back-btn">Before</label>
+                </div>
+                <div class="front">
+                    <p>“So, we will get the Lego out and build a castle first” instructs Frank ” Bertie, you can find
+                        all the red bricks, Theo “, ( teddy friend from across the road, very cute and easy to get along
+                        with) ” you can look out the windows and doors for us and Betty “( a pretty girl teddy from
+                        Build a Bear with a purple bow and a REAL heart, something which has not gone unnoticed with
+                        Frank!) ” you can get all the trees and green bits to go around the castle”</p>
+                    <label for="c3" class="next-btn">NEXT</label>
+                </div>
+            </div>
+            <!-- Page 4 -->
 
-    <h1>Welcome to Bertie Bear</h1>
+            <div class="flip" id="p4">
+                <div class="back">
+                    <label for="c4" class="back-btn">Before</label>
+                </div>
+                <div class="front">
+                    <p>Frank looks around the table with an air of teddy bear authority ” We don’t have long so we’d
+                        better get a move on folks…. anyone not want their Jammy Dodger? ” This last request is aimed at
+                        Bertie who is still struggling to wean himself off the familiar Party Ring biscuits he so loved
+                        in foster bear. We are trying to introduce a wider variety of food into his diet but his need
+                        for control and security is hampering this somewhat. Frank, on the other hand, is making the
+                        most of this need to stick with the familiar and is happily hoovering up any bits that Bertie
+                        rejects. ( “you always told me we shouldn’t waste good food)” he splutters when I challenge him
+                        on his hoovering habits.( “I am doing us all a favour!”)</p>
+                    <label for="c4" class="next-btn">NEXT</label>
+                </div>
+            </div>
 
-    <!-- About Section -->
+        </div>
+    </div>
 
-    <section class="about">
-        <h2>About</h2>
-        <p>This is some placeholder text</p>
-    </section>
 
-    <!-- Section Bertie Bear Stories -->
-    <section class="bertie-bear-stories">
-        <h2>Bertie Bear Stories</h2>
-        <button class="button"><a href="./assets/html/bb-learns-to-play.html">Bertie Bear Learns to Play</a></button>
-    </section>
-
+    </div>
+    </div>
 </body>
 
 </html>
