@@ -68,7 +68,7 @@ img{
     z-index: 99;
     transform: rotateY(180deg);
     backface-visibility: hidden;
-    background-color: #000;
+    background-color: transparent;
 }
 
 .next-btn {
@@ -112,4 +112,18 @@ img{
 #c3:checked~.flip-book #p3 {
     transform: rotateY(-180deg);
     z-index: 3;
+}
+
+.cover-back-p1{
+    height: 100%;
+    background-image: url(../images/Bertie_Bear.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.page-4-front{
+    height: 100%;
+    background-image: url(../images/Bertie_Bear.jpg);
+    background-size: cover;
+    color: #fff;
 }
