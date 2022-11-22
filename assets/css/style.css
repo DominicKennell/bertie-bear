@@ -114,26 +114,19 @@ img{
     z-index: 3;
 }
 
-.back-para{
+.para{
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.front-para{
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
 
-.cover-back-p1{
+.cover-back{
     height: 100%;
     background-image: url(../images/Bertie_Bear.jpg);
     background-size: cover;
     color: #fff;
 }
-
-
 
 .back-page-1{
     height: 100%;
