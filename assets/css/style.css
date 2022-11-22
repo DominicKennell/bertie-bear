@@ -114,6 +114,18 @@ img{
     z-index: 3;
 }
 
+.back-para{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.front-para{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .cover-back-p1{
     height: 100%;
     background-image: url(../images/Bertie_Bear.jpg);
@@ -121,7 +133,16 @@ img{
     color: #fff;
 }
 
-.page-4-front{
+
+
+.back-page-1{
+    height: 100%;
+    background-image: url(../images/Bertie_Bear_01.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.page-2-back{
     height: 100%;
     background-image: url(../images/Bertie_Bear.jpg);
     background-size: cover;
